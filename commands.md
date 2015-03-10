@@ -10,7 +10,7 @@ Manager
 
 |Comando | Argumentos | Descrição |
 |:------:|:---------:|:--------------------------------------:|
-|!afklimit | X | Deixa o tempo limite de ausência |
+|!afklimit | X | Define o tempo máximo de AFK |
 |!clearchat | | Limpa o chat |
 |!cycle | | Ativa ou desativa o ciclo de DJ |
 |!cycletimer | X | Limite da fila para quando o ciclo está ativado |
