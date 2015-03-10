@@ -196,7 +196,7 @@
             chatLink: "https://rawgit.com/CasaDoRock/Bot/master/lang/pt.json",
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
-            startupEmoji: false, // true or false
+            startupEmoji: true, // true or false
             maximumAfk: 120,
             afkRemoval: true,
             maximumDc: 60,
