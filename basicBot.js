@@ -184,7 +184,7 @@
         name: "BotDoMetal",
         loggedInID: null,
         scriptLink: "https://rawgit.com/CasaDoRock/Bot/master/basicBot.js",
-        cmdLink: "https://github.com/CasaDoRock/Bot/master/commands.md",
+        cmdLink: "https://github.com/CasaDoRock/Bot/blob/master/commands.md",
         chatLink: "https://rawgit.com/CasaDoRock/Bot/master/lang/pt.json",
         chat: null,
         loadChat: loadChat,
