@@ -235,7 +235,7 @@
             welcome: true,
             opLink: null,
             rulesLink: null,
-            themeLink: "Nightwish",
+            themeLink: null,
             fbLink: null,
             youtubeLink: null,
             website: null,
