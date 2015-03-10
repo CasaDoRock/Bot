@@ -61,7 +61,7 @@ Bouncer
 |!lockguard | | ativar ou desativar o lockguard |
 |!lockskip | (reason) | pula a música e move o DJ na fila (a posição pode ser definida com !lockskippos) |
 |!lockskippos | X | define a posição que o DJ irá quando for usado !lockskip |
-|!motd | (X)/(message) | quando não tem argumento especificado, retorna com mensagem do dia, quando X for especificado, a mensagem aparece a cada X músicas, quando mensagem for dada, autera a mensagem do dia |
+|!motd | (X)/(message) | quando não tem argumento especificado, retorna com mensagem do dia, quando X for especificado, a mensagem aparece a cada X músicas, quando mensagem for dada, altera a mensagem do dia |
 |!mute | @user (X) | mutar o usuário, por X minutos se X for especificado, caso contrário, será mutado por tempo inderteminado |
 |!reload | | recarregar o bot |
 |!sessionstats | | mostra status da seção atual |
