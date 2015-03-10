@@ -54,7 +54,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/Yemasthui/basicBot/master/lang/langIndex.json", function (json) {
+        $.get("https://github.com/CasaDoRock/Bot/master/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -181,19 +181,19 @@
     var basicBot = {
         version: "2.2.2",
         status: false,
-        name: "basicBot",
+        name: "BotDoMetal",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
-        cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        scriptLink: "https://rawgit.com/CasaDoRock/Bot/master/basicBot.js",
+        cmdLink: "https://github.com/CasaDoRock/Bot/master/commands.md",
+        chatLink: "https://rawgit.com/CasaDoRock/Bot/master/lang/pt.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "basicBot",
-            language: "english",
-            chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+            botName: "BotDoMetal",
+            language: "portuguese",
+            chatLink: "https://rawgit.com/CasaDoRock/Bot/master/lang/pt.json",
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
             startupEmoji: false, // true or false
@@ -217,19 +217,19 @@
             usercommandsEnabled: true,
             lockskipPosition: 3,
             lockskipReasons: [
-                ["theme", "This song does not fit the room theme. "],
-                ["op", "This song is on the OP list. "],
-                ["history", "This song is in the history. "],
+                ["theme", "Essa música não está no tema. "],
+                ["op", "Essa música está na lista de overplayed. "],
+                ["historico", "Essa música está no histórico. "],
                 ["mix", "You played a mix, which is against the rules. "],
-                ["sound", "The song you played had bad sound quality or no sound. "],
-                ["nsfw", "The song you contained was NSFW (image or sound). "],
-                ["unavailable", "The song you played was not available for some users. "]
+                ["sound", "A música que você escolheu está com qualidade de áudio ruim/sem áudio. "],
+                ["nsfw", "Essa música continha NSFW (imagem ou áudio). "],
+                ["unavailable", "Essa música não estava disponível para alguns usuários. "]
             ],
-            afkpositionCheck: 15,
+            afkpositionCheck: 5,
             afkRankCheck: "ambassador",
-            motdEnabled: false,
+            motdEnabled: true,
             motdInterval: 5,
-            motd: "Temporary Message of the Day",
+            motd: "Bem vindo a Casa do Rock & Metal BR",
             filterChat: true,
             etaRestriction: false,
             welcome: true,
@@ -244,8 +244,8 @@
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-                OP: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleOPlist.json"
+                NSFW: "https://rawgit.com/CasaDoRock/Bot/master/nsfw.json",
+                OP: "https://rawgit.com/CasaDoRock/Bot/master/op.json"
             }
         },
         room: {
@@ -521,43 +521,43 @@
                 var ms, msg, timeAway;
                 msg = '';
                 timeAway = {
-                    'days': 0,
-                    'hours': 0,
-                    'minutes': 0,
-                    'seconds': 0
+                    'dias': 0,
+                    'horas': 0,
+                    'minutos': 0,
+                    'segundos': 0
                 };
                 ms = {
-                    'day': 24 * 60 * 60 * 1000,
-                    'hour': 60 * 60 * 1000,
-                    'minute': 60 * 1000,
-                    'second': 1000
+                    'dia': 24 * 60 * 60 * 1000,
+                    'hora': 60 * 60 * 1000,
+                    'minuto': 60 * 1000,
+                    'segundo': 1000
                 };
-                if (msTime > ms.day) {
-                    timeAway.days = Math.floor(msTime / ms.day);
-                    msTime = msTime % ms.day;
+                if (msTime > ms.dia) {
+                    timeAway.dias = Math.floor(msTime / ms.dia);
+                    msTime = msTime % ms.dias;
                 }
-                if (msTime > ms.hour) {
-                    timeAway.hours = Math.floor(msTime / ms.hour);
-                    msTime = msTime % ms.hour;
+                if (msTime > ms.hora) {
+                    timeAway.horas = Math.floor(msTime / ms.hora);
+                    msTime = msTime % ms.hora;
                 }
-                if (msTime > ms.minute) {
-                    timeAway.minutes = Math.floor(msTime / ms.minute);
-                    msTime = msTime % ms.minute;
+                if (msTime > ms.minuto) {
+                    timeAway.minutos = Math.floor(msTime / ms.minuto);
+                    msTime = msTime % ms.minuto;
                 }
-                if (msTime > ms.second) {
-                    timeAway.seconds = Math.floor(msTime / ms.second);
+                if (msTime > ms.segundo) {
+                    timeAway.segundos = Math.floor(msTime / ms.segundo);
                 }
-                if (timeAway.days !== 0) {
-                    msg += timeAway.days.toString() + 'd';
+                if (timeAway.dias !== 0) {
+                    msg += timeAway.dias.toString() + 'd';
                 }
-                if (timeAway.hours !== 0) {
-                    msg += timeAway.hours.toString() + 'h';
+                if (timeAway.horas !== 0) {
+                    msg += timeAway.horas.toString() + 'h';
                 }
-                if (timeAway.minutes !== 0) {
-                    msg += timeAway.minutes.toString() + 'm';
+                if (timeAway.minutos !== 0) {
+                    msg += timeAway.minutos.toString() + 'm';
                 }
-                if (timeAway.minutes < 1 && timeAway.hours < 1 && timeAway.days < 1) {
-                    msg += timeAway.seconds.toString() + 's';
+                if (timeAway.minutos < 1 && timeAway.horas < 1 && timeAway.dias < 1) {
+                    msg += timeAway.segundos.toString() + 's';
                 }
                 if (msg !== '') {
                     return msg;
@@ -1113,13 +1113,10 @@
                 basicBot.room.roomstats.chatmessages++;
             },
             spam: [
-                'hueh', 'hu3', 'brbr', 'heu', 'brbr', 'kkkk', 'spoder', 'mafia', 'zuera', 'zueira',
-                'zueria', 'aehoo', 'aheu', 'alguem', 'algum', 'brazil', 'zoeira', 'fuckadmins', 'affff', 'vaisefoder', 'huenaarea',
-                'hitler', 'ashua', 'ahsu', 'ashau', 'lulz', 'huehue', 'hue', 'huehuehue', 'merda', 'pqp', 'puta', 'mulher', 'pula', 'retarda', 'caralho', 'filha', 'ppk',
-                'gringo', 'fuder', 'foder', 'hua', 'ahue', 'modafuka', 'modafoka', 'mudafuka', 'mudafoka', 'ooooooooooooooo', 'foda'
+                'rockwins', 'rw', 'rockwin'
             ],
             curses: [
-                'nigger', 'faggot', 'nigga', 'niqqa', 'motherfucker', 'modafocka'
+                'puta', 'favelado', 'fdp', 'vadia', 'cadela'
             ]
         },
         connectAPI: function () {
@@ -1639,7 +1636,7 @@
                     }
                 }
             },
-
+	/**
             cookieCommand: {
                 command: 'cookie',
                 rank: 'user',
@@ -1696,7 +1693,7 @@
                     }
                 }
             },
-
+**/
             cycleCommand: {
                 command: 'cycle',
                 rank: 'manager',
