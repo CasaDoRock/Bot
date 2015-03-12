@@ -1646,10 +1646,10 @@
                     'te deu um biscoito amassado, seco e velho. Era o último do pacote. Eca.',
                     'te deu um biscoito de chocolate. Ah não, isso é uvas passas. Nojento!',
                     'te deu um biscoito gigante. Cutucando ele, apareceu mais biscoitos. Estranho.',
-                    'te deu um biscoito da sorte. Está escrito "Porque não está trabalhando em nenhum projeto?"',
+                    'te deu um biscoito da sorte. Está escrito "Porque não está trabalhando?"',
                     'te deu um biscoito da sorte. Está escrito "Dê um elogio para aquela pessoa especial"',
                     'te deu um biscoito da sorte. Está escrito "Dê uma tentativa!"',
-                    'te deu um biscoito da sorte. Está escrito "Vai lá fora."',
+                    'te deu um biscoito da sorte. Está escrito "Vai lá fora, sai do PC."',
                     'te deu um biscoito da sorte. Está escrito "Coma seus vegetais!"',
                     'te deu um biscoito da sorte. Está escrito "Se você tentar, uma hora vai conseguir."',
                     'te deu um biscoito da sorte. Está escrito "Eu te amo."',
@@ -1657,7 +1657,8 @@
                     'te deu uma Oreo e um copo de leite',
                     'te deu uma bolacha com um arco-íris feito com amor :heart:',
                     'te deu uma bolacha que ficou na chuva, está com mofo.',
-                    'fez bolachas para você, tem um cheiro delicioso.'
+                    'fez bolachas para você, tem um cheiro delicioso.',
+                    'te deu um biscoito da sorte. Está escrito "A Alice vai banir o Gabriel"'
                 ],
                 getCookie: function () {
                     var c = Math.floor(Math.random() * this.cookies.length);
