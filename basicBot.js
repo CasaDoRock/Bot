@@ -229,7 +229,7 @@
             afkRankCheck: "ambassador",
             motdEnabled: true,
             motdInterval: 5,
-            motd: "Bem vindo a Casa do Rock & Metal BR",
+            motd: "Bem-vindo a Casa do Rock & Metal BR",
             filterChat: true,
             etaRestriction: false,
             welcome: true,
@@ -260,12 +260,12 @@
             autoskip: false,
             autoskipTimer: null,
             autodisableInterval: null,
-            autodisableFunc: function () {
+/**            autodisableFunc: function () {
                 if (basicBot.status && basicBot.settings.autodisable) {
                     API.sendChat('!afkdisable');
                     API.sendChat('!joindisable');
                 }
-            },
+            },**/
             queueing: 0,
             queueable: true,
             currentDJID: null,
