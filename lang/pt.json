@@ -8,7 +8,7 @@
 
 
     "welcome": "Bem-vindo(a), %%NAME%%",
-    "welcomeback": "Bem-vindo(a) de volta, @%%NAME%%",
+    "welcomeback": "Bem-vindo(a) de volta, %%NAME%%",
     "songknown": "/me :repeat: Essa música já foi tocada recentemente! Pulando música... :repeat:",
     "timelimit": "@%%NAME%%, sua música tem duração maior que %%MAXLENGTH%% minutos. Você precisa de permissão para tocar músicas longas.",
     "permissionownsong": "/me :up: @%%NAME%% tem permissão para tocar música de própria autoria!",
