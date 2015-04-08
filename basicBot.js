@@ -1661,6 +1661,7 @@
                     'te deu um biscoito da sorte. Está escrito "A Alice vai banir o Gabriel"',
                     'te deu um biscoito da sorte. Está escrito "Screamo é viadagem"',
                     'te deu um biscoito da sorte. Você não vai ter sorte porque esse biscoito traz azar',
+                    'não te deu um biscoito de crack porque isso não existe.'
                     'te deu um biscoito da sorte. Está escrito "Bom é quando faz mal"'
 
                 ],
