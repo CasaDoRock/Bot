@@ -1738,7 +1738,7 @@
                 }
             },
             
-            cycleCommand: {
+            cycleCommand {
                 command: 'cycle',
                 rank: 'manager',
                 type: 'exact',
