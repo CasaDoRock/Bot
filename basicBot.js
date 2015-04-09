@@ -3417,5 +3417,5 @@
         }
     },
 
-    loadChat(basicBot.startup);
+    loadChat(BotDoMetal.startup);
 }).call(this);
