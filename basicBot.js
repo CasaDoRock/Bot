@@ -1733,8 +1733,8 @@
                             else {
                                 return API.sendChat(subChat(basicBot.chat.humor, {namefrom: chat.un, humor: this.getHumor()}));
                             }
-                        }
-                    }
+//                        }
+//                    }
                 }
             },
             
