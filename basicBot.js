@@ -1696,7 +1696,7 @@
                 }
             },
 
-            humorCommand: {
+/*            humorCommand: {
                 command: 'humor',
                 rank: 'user',
                 type: 'startsWith',
@@ -1711,7 +1711,7 @@
                     var c = Math.floor(Math.random() * this.frases.length);
                     return this.frases[c];
                 },
-                functionality: function (chat, cmd) {
+//                functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
@@ -1738,7 +1738,7 @@
                     }
                 }
             },
-            
+*/            
             cycleCommand: {
                 command: 'cycle',
                 rank: 'manager',
