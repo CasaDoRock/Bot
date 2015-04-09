@@ -1693,7 +1693,7 @@
                         }
                     }
                 }
-            },
+            }
 
             humorCommand: {
                 command: 'humor',
