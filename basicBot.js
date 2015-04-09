@@ -1661,9 +1661,8 @@
                     'te deu um biscoito da sorte. Está escrito "Screamo é viadagem"',
                     'te deu um biscoito da sorte. Você não vai ter sorte porque esse biscoito traz azar',
                     'não te deu um biscoito de crack porque isso não existe.',
-                    'te deu um biscoito da sorte. Está escrito "Bom é quando faz mal"'
-
-                ],
+                    'te deu um biscoito da sorte. Está escrito "Bom é quando faz mal"'],
+                    
                 getCookie: function () {
                     var c = Math.floor(Math.random() * this.cookies.length);
                     return this.cookies[c];
