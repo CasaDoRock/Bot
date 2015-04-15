@@ -7,8 +7,8 @@
     "online": "/me %%BOTNAME%% v%%VERSION%% online!",
 
 
-    "welcome": "Bem vindo(a), %%NAME%%",
-    "welcomeback": "Bem vindo(a) de volta, %%NAME%%",
+    "welcome": "Bem-vindo(a) a Casa do Rock & Metal, %%NAME%%",
+    "welcomeback": "Bem-vindo(a) de volta, %%NAME%%",
     "songknown": "@%%NAME%%, essa música está no histórico.",
     "timelimit": "@%%NAME%%, sua música tem duração maior que %%MAXLENGTH%% minutos. Você precisa de permissão para tocar músicas longas.",
     "permissionownsong": "/me :up: @%%NAME%% tem permissão para tocar música de própria autoria!",
