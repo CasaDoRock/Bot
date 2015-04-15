@@ -183,9 +183,9 @@
         status: false,
         name: "BotDoMetal",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/CasaDoRock/Bot/master/basicBot.js",
+        scriptLink: "https://raw.githubusercontent.com/CasaDoRock/Bot/master/basicBot.js",
         cmdLink: "http://git.io/vvga4",
-        chatLink: "https://github.com/CasaDoRock/Bot/raw/master/lang/pt.json",
+        chatLink: "https://raw.githubusercontent.com/CasaDoRock/Bot/master/lang/pt.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -193,7 +193,7 @@
         settings: {
             botName: "BotDoMetal",
             language: "portuguese",
-            chatLink: "https://github.com/CasaDoRock/Bot/raw/master/lang/pt.json",
+            chatLink: "https://raw.githubusercontent.com/CasaDoRock/Bot/master/lang/pt.json",
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
             startupEmoji: true, // true or false
