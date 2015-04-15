@@ -54,7 +54,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/Yemasthui/basicBot/master/lang/langIndex.json", function (json) {
+        $.get("https://github.com/CasaDoRock/Bot/raw/master/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -184,8 +184,8 @@
         name: "BotDoMetal",
         loggedInID: null,
         scriptLink: "https://rawgit.com/CasaDoRock/Bot/master/basicBot.js",
-        cmdLink: "https://raw.githubusercontent.com/CasaDoRock/Bot/master/commands.md",
-        chatLink: "https://raw.githubusercontent.com/CasaDoRock/Bot/master/lang/pt.json",
+        cmdLink: "http://git.io/vvga4",
+        chatLink: "https://github.com/CasaDoRock/Bot/raw/master/lang/pt.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -193,7 +193,7 @@
         settings: {
             botName: "BotDoMetal",
             language: "portuguese",
-            chatLink: "https://raw.githubusercontent.com/CasaDoRock/Bot/master/lang/pt.json",
+            chatLink: "https://github.com/CasaDoRock/Bot/raw/master/lang/pt.json",
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
             startupEmoji: true, // true or false
@@ -202,7 +202,7 @@
             afkRemoval: false,
             maximumDc: 60,
             bouncerPlus: true,
-            blacklistEnabled: true,
+            blacklistEnabled: false,
             lockdownEnabled: false,
             lockGuard: false,
             maximumLocktime: 10,
@@ -210,7 +210,7 @@
             maximumCycletime: 10,
             voteSkip: false,
             voteSkipLimit: 10,
-            historySkip: true,
+            historySkip: false,
             timeGuard: true,
             maximumSongLength: 10,
             autodisable: true,
@@ -218,54 +218,54 @@
             usercommandsEnabled: true,
             lockskipPosition: 3,
             lockskipReasons: [
-                ["theme", "This song does not fit the room theme. "],
-                ["op", "This song is on the OP list. "],
-                ["history", "This song is in the history. "],
+                ["theme", "Essa música está fora do tema. "],
+                ["op", "Essa música está na lista de OP. "],
+                ["history", "Essa música está no histórico. "],
                 ["mix", "You played a mix, which is against the rules. "],
-                ["sound", "The song you played had bad sound quality or no sound. "],
+                ["sound", "Essa música está com baixa qualidade ou sem áudio. "],
                 ["nsfw", "The song you contained was NSFW (image or sound). "],
-                ["unavailable", "The song you played was not available for some users. "]
+                ["unavailable", "Essa música está indisponível para alguns usuários. "]
             ],
             ball: [
-            "Signs point to yes.",
-            "Yes.",
-            "Reply hazy, try again.",
-            "Without a doubt.",
-            "My sources say no.",
-            "As I see it, yes.",
-            "You may rely on it.",
-            "Concentrate and ask again.",
-            "Outlook not so good.",
-            "It is decidedly so.",
-            "Better not tell you now.",
-            "Very doubtful.",
-            "Yes - definitely.",
-            "It is certain.",
-            "Cannot predict now.",
-            "Most likely.",
-            "Ask again later.",
-            "My reply is no.",
-            "Outlook good.",
-            "Don't count on it.",
-            "Yes, in due time.",
-            "My sources say no.",
-            "Definitely not.",
-            "You will have to wait.",
-            "I have my doubts.",
-            "Outlook so so.",
-            "Looks good to me!",
-            "Who knows?",
-            "Looking good!",
-            "Probably.",
-            "Are you kidding?",
-            "Don't bet on it.",
-            "Forget about it."
+            "Provavelmente sim.",
+            "Sim.",
+            "Deu tilt aqui, pergunta de novo.",
+            "Sem dúvidas.",
+            "Minhas fontes dizem que sim.",
+            "Olhando bem, sim.",
+            "Você vai precisar pensar bem nisso.",
+            "Se concentre e pergunte de novo.",
+            "Não muito bem.",
+            "Foi decidido sim.",
+            "Melhor não te contar agora.",
+            "Duvido muito.",
+            "Sim, definitivamente.",
+            "Certeza que sim.",
+            "Não posso prever agora.",
+            "Muito provável.",
+            "Pergunte-me depois.",
+            "Minha resposta é não.",
+            "Talvez.",
+            "Não conte com isso.",
+            "Sim, no seu tempo.",
+            "Não tão cedo.",
+            "Definitivamente não.",
+            "Você vai ter que esperar.",
+            "Tenho minhas dúvidas.",
+            "Talvez sim, talvez não.",
+            "Parece bom para mim!",
+            "Quem vai saber?",
+            "Parece bom!",
+            "Provavelmente.",
+            "É sério isso?",
+            "Não aposte nisso.",
+            "Esqueça esse assunto."
             ],
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
-            motdEnabled: true,
-            motdInterval: 15,
-            motd: "Bem-vindo à Casa do Rock & Metal BR",
+            motdEnabled: false,
+            motdInterval: 5,
+            motd: "Bem-vindo à Casa do Rock & Metal",
             filterChat: false,
             etaRestriction: false,
             welcome: true,
@@ -1760,8 +1760,8 @@
                     'te deu um biscoito da sorte. Está escrito "Screamo é viadagem"',
                     'te deu um biscoito da sorte. Você não vai ter sorte porque esse biscoito traz azar',
                     'não te deu um biscoito de crack porque isso não existe.',
-                    'te deu um biscoito da sorte. Está escrito "Bom é quando faz mal"'],
-                    
+                    'te deu um biscoito da sorte. Está escrito "Bom é quando faz mal"'
+                ],
                 getCookie: function () {
                     var c = Math.floor(Math.random() * this.cookies.length);
                     return this.cookies[c];
@@ -1792,49 +1792,6 @@
                         }
                     }
                 }
-            },
-
-            humorCommand: {
-                command: 'humor',
-                rank: 'user',
-                type: 'startsWith',
-                frases: ['As opiniões são como cu, todo mundo tem um, e eles estão frequetemente cheios de merda.',
-		'Crianças no banco traseiro causam acidentes. Acidentes no banco de trás causam crianças.',
-		'Se você nasceu feio culpe seus pais, se você morreu feio culpe o seu médico.',
-		'Por trás de todo homem bem sucedido, há uma mulher. E por trás de todo homem mal sucedido, há duas ou mais.',
-		'Um vestido é como uma cerca farpado. Ele protege as instalações sem restringir a vista.'					
-
-                ],
-                getHumor: function () {
-                    var c = Math.floor(Math.random() * this.frases.length);
-                    return this.frases[c];
-                },
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-//                    else {
-//                        var msg = chat.message;
-//
-//                        var space = msg.indexOf(' ');
-//                        if (space === -1) {
-//                            API.sendChat(basicBot.chat.eatcookie);
-//                            return false;
-//                        }
-//                       else {
-//                           var name = msg.substring(space + 2);
-//                           var user = basicBot.userUtilities.lookupUserName(name);
-//                           if (user === false || !user.inRoom) {
-//                               return API.sendChat(subChat(basicBot.chat.nousercookie, {name: name}));
-//                           }
-//                           else if (user.username === chat.un) {
-//                               return API.sendChat(subChat(basicBot.chat.selfcookie, {name: name}));
-//                            }
-                            else {
-                                return API.sendChat(subChat(basicBot.chat.humor, {namefrom: chat.un, humor: this.getHumor()}));
-                            }
-//                        }
-//                    }
-//                }
             },
 
             cycleCommand: {
@@ -3180,6 +3137,7 @@
                              indexMuted = i;
                              wasMuted = true;
                              }
+
                              }
                              if (!wasMuted) return API.sendChat(subChat(basicBot.chat.notmuted, {name: chat.un}));
                              basicBot.room.mutedUsers.splice(indexMuted);
@@ -3415,7 +3373,7 @@
                 }
             }
         }
-    },
+    };
 
-    loadChat(BotDoMetal.startup);
+    loadChat(basicBot.startup);
 }).call(this);
