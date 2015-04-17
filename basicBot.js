@@ -272,7 +272,7 @@
             opLink: null,
             rulesLink: null,
             themeLink: null,
-            fbLink: "Junte-se ao nosso grupo: https://www.facebook.com/groups/736894979742372/",
+            fbLink: "http://on.fb.me/1yCPZNU",
             youtubeLink: null,
             website: null,
             intervalMessages: [],
