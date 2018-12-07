@@ -1,5 +1,5 @@
 {
-    "english": "https://rawgit.com/CasaDoRock/Bot/master/lang/en.json",
-    "portuguese": "https://rawgit.com/CasaDoRock/Bot/master/lang/pt.json",
-    "french": "https://rawgit.com/CasaDoRock/Bot/master/lang/fr.json"
+    "english": "https://cdn.jsdelivr.net/gh/CasaDoRock/Bot/lang/en.json",
+    "portuguese": "https://cdn.jsdelivr.net/gh/CasaDoRock/Bot/lang/pt.json",
+    "french": "https://cdn.jsdelivr.net/gh/CasaDoRock/Bot/lang/fr.json"
 }
